@@ -35,7 +35,7 @@
             display: block;
             margin: 30px auto;
             width: 60%;
-            height: 70px;
+            height: auto;
             border: 3px solid black;
             border-radius: 8px;
             background-color: #fff4e3;
@@ -44,21 +44,24 @@
             font-weight: bold;
         }
 
-        .dialogue {
-            border: 4px solid black;
-            border-radius: 10px;
-            background-color: #fff4e3;
-            margin: 120px 10px 20px 10px;
-            height: 200px;
-            padding: 10px;
-            font-size: 25px;
-            font-weight: bold;
-        }
+.dialogue {
+    border: 4px solid black;
+    border-radius: 10px;
+    background-color: #fff4e3;
+    margin: 120px 10px 20px 10px;
+    min-height: 200px;
+    height: auto;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
 
-        .dialogue-text {
-            text-align: center;
-            margin-top: 40px;
-        }
+.dialogue-text {
+    text-align: center;
+    margin-top: 20px;
+    line-height: 1.5;
+}
 
         footer {
             text-align: center;
@@ -90,14 +93,14 @@
 
 
         <main>
-            <button class="choice">Ask about it</button>
-            <button class="choice">Ignore it</button>
+            <button class="choice">Tell her the truth and continue talking about the crime</button>
+            <button class="choice">Say that it's nothing and proceed to ask what she'd like to order </button>
 
            <section class="dialogue">
     <div class="dialogue-name">MC</div>
 
     <div class="dialogue-text">
-        Seems like the clients are talking about something suspicious.
+        You learn that the girls were discussing about a recent crime. Later that day you decide to do some light research on the crime and you found out the murdered girl's name was Ophelia, and her best friend's name is Astrid. The reports said she killed Ophelia, but since there wasn’t enough proof the police set her free. Everyone mentions different motives behind the crime. You found yourself deep in thought until a light haired young woman interrupted your thoughts. She asked you about what you were thinking about, so you decide to...
     </div>
 </section>
         </main>
