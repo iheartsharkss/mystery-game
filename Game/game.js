@@ -123,7 +123,7 @@ function refresh() {
   let inv = document.getElementById("inventory");
   if (inv) {
     let bag = getBag();
-    inv.textContent = bag.length ? bag.join(", ") : "nothing yet";
+    inv.textContent = bag.length ? bag.join(", ") : "Inventory is empty";
   }
   let stat = document.getElementById("status");
   if (stat) {
