@@ -91,13 +91,19 @@
         
            <div class="inventory">
     <img src="Images/backpack.png" alt="backpack" style="width: 50px; height: 50px; vertical-align: middle;">
+    Items: <span id="inventory" style="display: inline-block; padding: 6px 10px; border: 2px solid #555; border-radius: 6px; background-color: #fff4e3; color: #333;">nothing yet</span>
 </div>
         </header>
 
 
         <main>
-            <a href="index copy 2.html" class="choice">You pick it up</a>
-            <a href="index copy 4.html" class="choice">You ignore it</a>
+            <a href="index copy 2.html" class="choice" onclick="addItem('letter')">You pick it up</a>
+            <button type="button" class="choice" onclick="document.getElementById('letter-required').hidden = false;">You ignore it</button>
+            <section class="dialogue" id="letter-required" hidden>
+                <div class="dialogue-text">
+                    You need the letter to continue the story. Pick it up to find out what happens next.
+                </div>
+            </section>
 
            <section class="dialogue">
     <div class="dialogue-name">MC</div>
